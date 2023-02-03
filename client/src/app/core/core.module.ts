@@ -5,11 +5,12 @@ import { RouterModule } from '@angular/router';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ServerErrorComponent } from './server-error/server-error.component';
 import { ToastrModule } from 'ngx-toastr';
+import { SectionHeaderComponent } from './section-header/section-header.component';
 
 
 
 @NgModule({
-  declarations: [NavBarComponent, NotFoundComponent, ServerErrorComponent],
+  declarations: [NavBarComponent, NotFoundComponent, ServerErrorComponent, SectionHeaderComponent],
   imports: [
     CommonModule,
     RouterModule,
@@ -19,7 +20,8 @@ import { ToastrModule } from 'ngx-toastr';
     })
   ],
   exports:[
-    NavBarComponent
+    NavBarComponent,
+    SectionHeaderComponent
   ]
 })
 export class CoreModule { }
